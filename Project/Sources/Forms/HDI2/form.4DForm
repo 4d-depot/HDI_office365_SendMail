@@ -1,0 +1,332 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 22,
+					"left": 23,
+					"width": 1027,
+					"height": 856,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "_TabTitles",
+					"dataSourceTypeHint": "arrayText",
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"information": {
+					"type": "input",
+					"top": 119,
+					"left": 51,
+					"width": 966,
+					"height": 720,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Infos[0].Description",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable4": {
+					"type": "input",
+					"top": 206,
+					"left": 191,
+					"width": 547,
+					"height": 16,
+					"dataSource": "Form:C1466.mail.from",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"contextMenu": "none",
+					"enterable": false,
+					"focusable": false
+				},
+				"Texte5": {
+					"type": "text",
+					"top": 206,
+					"left": 51,
+					"width": 138,
+					"height": 15,
+					"text": "From:"
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 233,
+					"left": 191,
+					"width": 547,
+					"height": 16,
+					"dataSource": "Form:C1466.mail.to",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte6": {
+					"type": "text",
+					"top": 233,
+					"left": 51,
+					"width": 138,
+					"height": 15,
+					"text": "To:"
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 260,
+					"left": 191,
+					"width": 547,
+					"height": 16,
+					"dataSource": "Form:C1466.mail.cc",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable9": {
+					"type": "input",
+					"top": 287,
+					"left": 191,
+					"width": 547,
+					"height": 16,
+					"dataSource": "Form:C1466.mail.subject",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 313,
+					"left": 769,
+					"width": 256,
+					"height": 19,
+					"text": "Select attachment",
+					"focusable": false,
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte7": {
+					"type": "text",
+					"top": 260,
+					"left": 51,
+					"width": 138,
+					"height": 15,
+					"text": "CC:"
+				},
+				"Texte8": {
+					"type": "text",
+					"top": 363,
+					"left": 51,
+					"width": 138,
+					"height": 15,
+					"text": "Text body:"
+				},
+				"Button1": {
+					"type": "button",
+					"top": 204,
+					"left": 769,
+					"width": 256,
+					"height": 20,
+					"text": "Send email",
+					"focusable": false,
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte10": {
+					"type": "text",
+					"top": 287,
+					"left": 51,
+					"width": 138,
+					"height": 15,
+					"text": "Subject:"
+				},
+				"Texte11": {
+					"type": "text",
+					"top": 314,
+					"left": 51,
+					"width": 138,
+					"height": 15,
+					"text": "Attachment:"
+				},
+				"Variable10": {
+					"type": "input",
+					"top": 314,
+					"left": 191,
+					"width": 547,
+					"height": 16,
+					"dataSource": "Form:C1466.attachment",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"contextMenu": "none"
+				},
+				"Texte13": {
+					"type": "text",
+					"top": 172,
+					"left": 51,
+					"width": 221,
+					"height": 25,
+					"stroke": "#808080",
+					"fontFamily": "Segoe UI",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"text": "Mail information"
+				},
+				"Button": {
+					"type": "button",
+					"text": "Sign In",
+					"top": 139,
+					"left": 51,
+					"width": 154,
+					"height": 33,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button.4dm"
+				},
+				"Input": {
+					"type": "input",
+					"left": 190,
+					"top": 367,
+					"width": 548,
+					"height": 208,
+					"dataSource": "Form:C1466.mail.textBody"
+				},
+				"information1": {
+					"type": "input",
+					"top": 59,
+					"left": 51,
+					"width": 966,
+					"height": 80,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Infos[1].Description",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Trace": {
+					"type": "checkbox",
+					"text": "Trace",
+					"top": 849,
+					"left": 30,
+					"width": 117,
+					"height": 18,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.trace",
+					"sizingY": "move"
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 586,
+					"left": 51,
+					"width": 138,
+					"height": 15,
+					"text": "HTML body:"
+				},
+				"Input1": {
+					"type": "input",
+					"left": 190,
+					"top": 590,
+					"width": 548,
+					"height": 208,
+					"dataSource": "Form:C1466.mail.htmlBody"
+				}
+			},
+			"entryOrder": [
+				"Variable4",
+				"Variable5",
+				"Variable6",
+				"Variable9",
+				"Button2",
+				"Button1",
+				"Variable10",
+				"Button",
+				"Input",
+				"information1",
+				"Trace",
+				"Input1"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"Guides": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	},
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"geometryStamp": 358
+}

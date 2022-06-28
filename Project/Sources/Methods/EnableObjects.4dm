@@ -1,0 +1,15 @@
+//%attributes = {}
+#DECLARE($isEnable : Boolean)
+
+OBJECT SET ENABLED:C1123(*; "variable5"; $isEnable)
+OBJECT SET ENABLED:C1123(*; "variable6"; $isEnable)
+OBJECT SET ENABLED:C1123(*; "variable9"; $isEnable)
+OBJECT SET ENABLED:C1123(*; "input"; $isEnable)
+OBJECT SET ENABLED:C1123(*; "input1"; $isEnable)
+OBJECT SET ENABLED:C1123(*; "Popup Dropdown List"; $isEnable)
+OBJECT SET ENABLED:C1123(*; "button1"; $isEnable)
+OBJECT SET ENABLED:C1123(*; "button2"; $isEnable)
+OBJECT SET ENABLED:C1123(*; "Radio button"; $isEnable)
+OBJECT SET ENABLED:C1123(*; "Radio button1"; $isEnable)
+OBJECT SET ENABLED:C1123(*; "Radio button2"; $isEnable)
+OBJECT SET ENABLED:C1123(*; "Radio button3"; $isEnable)
